@@ -8,7 +8,7 @@ const calBody = document.querySelector(".calBody");
 calBodyClass.split(" ").forEach((cls) => calBody.classList.add(cls));
 
 const outputClass =
-"flex flex-col w-3/4 h-12 justify-center items-end m-1 bg-gray-300 text-gray-900 font-semibold px-2 border border-black hover:border-gray-500 rounded";
+"flex flex-col w-3/4 h-12 justify-center items-end m-1 bg-gray-300 text-gray-900 font-semibold px-2 border border-black hover:border-gray-500 rounded-lg";
 const output = document.querySelector(".output");
 outputClass.split(" ").forEach((cls) => output.classList.add(cls));
 
@@ -48,6 +48,6 @@ function addClass(button) {
         btnDecClass.split(" ").forEach((cls) => button.classList.add(cls));
     }
 
-    const baseClass = "number flex w-12 h-12 justify-center items-center m-1 font-bold py-2 px-2 border hover:border-transparent rounded text-white border-2 text-2xl";
+    const baseClass = "number flex w-12 h-12 justify-center items-center m-1 font-bold py-2 px-2 border hover:border-transparent rounded-3xl text-white border-2 text-2xl";
     baseClass.split(" ").forEach((cls) => button.classList.add(cls));
 }
